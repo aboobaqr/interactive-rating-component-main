@@ -1,0 +1,137 @@
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Element Styling */
+
+body {
+    box-sizing: border-box;
+    background:  hsl(216, 12%, 8%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 20px;
+}
+
+p {
+    color: hsl(217, 12%, 63%);
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.3rem;
+}
+
+
+/* Utilities */
+.container {
+    max-width: 20%;
+    margin: 25vh auto;
+    background: hsl(213, 19%, 18%);
+    padding: 40px 30px;
+    border-radius: 25px;
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
+
+/* IDs and Classes */
+
+#rating .star {
+    width: 20px;
+    padding: 15px;
+    border: 1px solid hsl(213, 19%, 18%);
+    border-radius: 50%;
+    margin-bottom: 24px;
+    background: hsl(213, 20%, 23%);
+}
+
+#rating p {
+    margin-bottom: 24px;
+}
+
+.rating-btn {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 24px;
+}
+
+.rating-btn a {
+    text-decoration: none;
+    color: hsl(217, 12%, 63%);
+    width: 20px;
+    padding: 15px;
+    border-radius: 50%;
+    background: hsl(213, 20%, 23%);
+    text-align: center;
+}
+
+.rating-btn .active, .active:hover {
+    background: hsl(216, 12%, 54%);
+    color: hsl(0, 0%, 100%);;
+}
+
+.rating-btn a:hover {
+    color: hsl(0, 0%, 100%);
+    background: hsl(25, 97%, 53%);
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    color: hsl(0, 0%, 100%);
+    background: hsl(25, 97%, 53%);
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: hsl(25, 97%, 53%);
+    background: hsl(0, 0%, 100%);
+}
+
+#after-rating img {
+    display: block;
+    margin: auto;
+}
+
+.message {
+    margin: 20px;
+    background: hsl(213, 20%, 23%);
+    border-radius: 26px;
+}
+
+.message p {
+    color: hsl(25, 97%, 53%);
+    padding: 5px;
+}
+
+#after-rating p, h1 {
+    text-align: center;
+}
+
+.close-btn {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2rem;
+    color: hsl(217, 12%, 63%);
+    position: absolute;
+    right: 30px;
+    top: 15px;
+}
+
+/* For Mobile */
+
+@media(max-width: 760px){
+    .container{
+        max-width: 75%;
+        margin: 16vh auto;
+    }
+    
+}
